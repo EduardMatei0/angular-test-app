@@ -1,0 +1,51 @@
+<!-- <div *ngIf="courses.length > 0; then coursesList else noCourses"></div> -->
+<!-- <div [hidden]="courses.length === 0">
+    List of Courses
+</div>
+<div [hidden]="courses.length > 0">
+    No courses yet
+</div> -->
+<!-- <ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
+    <li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'">List View</a></li>
+    <li [class.active]="viewMode == 'asdasd'"><a (click)="viewMode = 'asdasd'">Otherwise</a></li>
+</ul>       
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault> Otherwise</div>
+</div> -->
+<!-- <button (click)="onAdd()">Add</button> -->
+<!-- <ul>
+    <li *ngFor="let course of courses; even as isEven">
+        {{course.name}} <span *ngIf="isEven">(EVEN)</span>
+        <button (click)="onRemove(course)">Remove</button>
+    </li>
+</ul> -->
+<!-- <button (click)="loadCourses()">Load Courses</button>
+<ul>
+        <li *ngFor="let course of courses; trackBy: trackCourse">
+            {{course.name}} <span *ngIf="isEven">(EVEN)</span>
+            <button (click)="onRemove(course)">Remove</button>
+        </li>
+</ul> -->
+<!-- <button
+    [ngStyle]="{
+        'backgroundColor': canSave ? 'blue' : 'gray',
+        'color': canSave ? 'white' : 'black',
+        'fontWeight': canSave ? 'bold' : 'normal'
+    }"
+    (click)="changeColor()"
+>Save</button> -->
+<!-- <span>{{ task.assignee?.name }}</span> -->
+<!-- <zippy title="Shipping Details">
+    Shipping Details content
+</zippy>
+<zippy title="Billing Details">
+    Billing Details content
+</zippy> -->
+<nav-bar></nav-bar>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
